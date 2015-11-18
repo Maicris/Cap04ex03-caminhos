@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.criandojogosandroid.cap04ex03_caminhos" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PentagonActivity"
+            android:label="Linhas Simples">
+            <intent-filter>
+                <action android:name="phd.com.br.caminhos.PentagonActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherActivity"
+            android:label="Primitivas">
+            <intent-filter>
+                <action android:name="phd.com.br.caminhos.OtherActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BezierActivity"
+            android:label="Curvas de Bézier">
+            <intent-filter>
+                <action android:name="phd.com.br.caminhos.BezierActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".QuadActivity"
+            android:label="Bézier Quadráticas">
+            <intent-filter>
+                <action android:name="phd.com.br.caminhos.QuadActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EffectActivity"
+            android:label="Efeitos sobre Caminhos">
+            <intent-filter>
+                <action android:name="phd.com.br.caminhos.EffectActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
